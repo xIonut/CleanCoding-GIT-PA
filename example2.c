@@ -49,7 +49,7 @@ int* insedg(int nr_of_vertices, int nr_of_edges, GPH* graph)
 {
     int src, dest = 0, i;
     printf("adauga %d muchii (de la 1 la %d)\n", nr_of_edges, nr_of_vertices);
-    for (i = 0; i < nr_of_edges; i++)
+    for (i = 0; i < nr_of_edges/2; i++)
     {
         scanf_s("%d%d", &src, &dest);
         add_edge(graph, src, dest);
